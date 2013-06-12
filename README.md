@@ -11,7 +11,7 @@ USE:
   When you want the data stored at the history, call writeHistory
   
 EXAMPLE:
-  See test, test.js
+  See test.js
   
   The return data have format:
      [ [ { name: 'prueba2',
@@ -28,7 +28,7 @@ EXAMPLE:
           workers: [Object] } ] ]
 
         
-    Where:
+  Where:
       Each array contained in main array has all workers that have been initiated with his name, date when has 
       been given the data and workers. Workers is an array with [number of jobs in the queue, number of
       running jobs, number of capable workers].
