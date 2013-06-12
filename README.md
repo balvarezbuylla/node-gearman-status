@@ -4,7 +4,7 @@ node-gearman-status
 Node.js module to monitor Gearman server status
 
 USE:
-  Require ('../lib/GearmanStatus'); /n
+  Require ('../lib/GearmanStatus')
   Define variables of builder
   Create the object
   Init the events with initHistory()
