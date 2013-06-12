@@ -1,0 +1,15 @@
+{
+    "name": "node_gearman_status",
+    "version": "0.0.1",
+    "description": "Node.js module to monitor Gearman server status",
+    "preferGlobal": "true",
+    "author": "Beatriz Alvarez-Buylla <balvarezbuylla@gmail.com>",
+    "keywords": ["status", "Gearman", "server"],
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/balvarezbuylla/node-gearman-status.git"
+    },
+    "dependencies": {
+    },
+    "engines": { "node": "*" }
+}
