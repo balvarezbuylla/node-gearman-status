@@ -11,5 +11,6 @@
     },
     "dependencies": {
     },
+    "main": "./lib/GearmanStatus.js",
     "engines": { "node": "*" }
 }
