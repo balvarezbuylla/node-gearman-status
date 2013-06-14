@@ -2,7 +2,7 @@ var GearmanStatus       = require ('../lib/GearmanStatus');
 var port                = 4730;
 var host                = "127.0.0.1";
 var buffer_size         = 10;
-var interval_polling    = 100; //ms
+var interval_polling    = 1000; //ms
 
 GearmanStatus= new GearmanStatus(port, host, buffer_size, interval_polling);
 
