@@ -35,6 +35,7 @@ Node.js module to monitor Gearman server status
             
             When an event occurs, the main array increases one position.
         
+     When the output returns status 2 means that there is not workers initiated. Init the workers and restart the module.
         
   
   
