@@ -17,7 +17,7 @@ Node.js module to monitor Gearman server status
          [ [ { name: 'prueba2',
               date: Wed Jun 12 2013 13:25:39 GMT+0200 (CEST),
               workers: [Object] },
-            { name: 'prueba',
+            { name: 'prueba',55
               date: Wed Jun 12 2013 13:25:39 GMT+0200 (CEST),
               workers: [Object] } ],
           [ { name: 'prueba2',
