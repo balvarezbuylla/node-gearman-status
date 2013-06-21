@@ -13,29 +13,38 @@ Node.js module to monitor Gearman server status
     EXAMPLE:
       See test.js
   
-      The return data have format:
-         [ [ { name: 'prueba2',
-              date: Wed Jun 12 2013 13:25:39 GMT+0200 (CEST),
-              workers: [Object] },
-            { name: 'prueba',55
-              date: Wed Jun 12 2013 13:25:39 GMT+0200 (CEST),
-              workers: [Object] } ],
-          [ { name: 'prueba2',
-              date: Wed Jun 12 2013 13:25:45 GMT+0200 (CEST),
-              workers: [Object] },
-            { name: 'prueba',
-              date: Wed Jun 12 2013 13:25:45 GMT+0200 (CEST),
-              workers: [Object] } ] ]
-
-        
-        Where:
-            Each array contained in main array has all workers that have been initiated with his name, date when has 
-            been given the data and workers. Workers is an array with [number of jobs in the queue, number of
-            running jobs, number of capable workers].
-            
-            When an event occurs, the main array increases one position.
-        
-     When the output returns status 2 means that there is not workers initiated. Init the workers and restart the module.
+      status
+      name wc
+      data [ { timestamp: Fri Jun 21 2013 13:04:02 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 },
+      { timestamp: Fri Jun 21 2013 13:04:08 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 },
+      { timestamp: Fri Jun 21 2013 13:04:14 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 },
+      { timestamp: Fri Jun 21 2013 13:04:20 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 },
+      { timestamp: Fri Jun 21 2013 13:04:26 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 } ]
+      name wc2
+      data [ { timestamp: Fri Jun 21 2013 13:04:26 GMT+0200 (CEST),
+         capables: 1,
+         waiting: 0,
+         running: 0 } ]
+      
+   Where:
+      status indicates one new polling saved. 
+         name is the name of each funcion
+         data contains the date and the data of the status command gearman-job-server
         
   
   
