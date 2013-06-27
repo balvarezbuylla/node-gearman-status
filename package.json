@@ -1,6 +1,6 @@
 {
     "name": "node_gearman_status",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Node.js module to monitor Gearman server status",
     "preferGlobal": "true",
     "author": "Beatriz Alvarez-Buylla <balvarezbuylla@gmail.com>",
