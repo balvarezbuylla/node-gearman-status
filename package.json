@@ -10,6 +10,7 @@
         "url": "https://github.com/balvarezbuylla/node-gearman-status.git"
     },
     "dependencies": {
+      "rrd": "*"
     },
     "main": "./lib/GearmanStatus.js",
     "engines": { "node": "*" }
