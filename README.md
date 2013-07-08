@@ -47,4 +47,11 @@ Node.js module to monitor Gearman server status
          data contains the date and the data of the status command gearman-job-server
         
   
+   EXAMPLE:
+      See testLog.js
+  
+      It shows the rrd database which has been selected. You must put the database name at : var rrd = new RRD('databasename.rrd');
+      Also, you must select the interval time which you want to see at rrd.fetch ("10:00", "now", function(err, results) 
+         Format: now shows the log until  the actual time
+                 see the different format of the time at: http://oss.oetiker.ch/rrdtool/doc/rrdfetch.en.html
   
