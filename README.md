@@ -9,6 +9,8 @@ Node.js module to monitor Gearman server status
       Create the object
       Init the events with initHistory()
       When you want the data stored at the history, call writeHistory
+      
+      If you want to save a history with rrdtool, you must put a path (for example: path= '/var/tmp/'). But, if you dont want to save a history, you must comment this line.
   
     EXAMPLE:
       See test.js
@@ -50,8 +52,12 @@ Node.js module to monitor Gearman server status
    EXAMPLE:
       See testLog.js
   
-      It shows the rrd database which has been selected. You must put the database name at : var rrd = new RRD('databasename.rrd');
+      It shows the rrd database which has been selected. You must put the directory and the name of file:
+         var directory    = '/var/tmp/';   
+         var name_file    = 'wc.rrd';
+         
       Also, you must select the interval time which you want to see at rrd.fetch ("10:00", "now", function(err, results) 
          Format: now shows the log until  the actual time
                  see the different format of the time at: http://oss.oetiker.ch/rrdtool/doc/rrdfetch.en.html
   
+

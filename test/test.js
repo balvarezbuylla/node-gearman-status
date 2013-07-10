@@ -3,9 +3,12 @@ var port                = 4730;
 var host                = "127.0.0.1";
 var buffer_size         = 2880;
 var interval_polling    = 1000; //ms
+var path;
+
+path= '/var/tmp/';
 
 
-GearmanStatus= new GearmanStatus(port, host, buffer_size, interval_polling);
+GearmanStatus= new GearmanStatus(port, host, buffer_size, interval_polling, path);
 
 GearmanStatus.initHistory();            //init the events
 
